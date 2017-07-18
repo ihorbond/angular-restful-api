@@ -1,0 +1,13 @@
+<p>
+  phone-list works!
+</p>
+<a [routerLink]="['']">Back to list</a>
+
+<h1> Phone list </h1>
+    <div>
+      <div *ngFor="let phone of phones">
+        <img [src]="phone.image" />
+        <h3> {{ phone.name }} </h3>
+        <p> {{ phone.brand }} </p>
+      </div>
+    </div>
